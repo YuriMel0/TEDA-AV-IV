@@ -1,0 +1,52 @@
+UFRJ - Universidade Federal do Rio de Janeiro
+MAE015 - Tóp. Especiais em Engenharia de dados A: Estrutura de dados
+Autores:
+Nome: Rhuan Justo
+DRE: 118043398
+
+Nome: Davi Richards
+DRE: 119022078
+
+Nome: Sebastião Rodrigo
+DRE: 117099621
+
+Nome: Yuri Ferreira Melo
+DRE: 120081378
+
+Na avaliação 4 do curso de Estruturas de Dados, programamos um algoritmo de
+Merge-Sort Externo, utilizado caso precisemos lidar com quantidades muito grandes
+de registros, possivelmente maiores do que a memória RAM.
+
+No nosso programa, esse algoritmo é programado como uma classe OO, e recebe como
+parâmetros construtores o campo de agrupamento (pode ser "idade","sexo","regiao" ou
+"renda"), e a função de agregação (pode ser "sum" ou "count").
+
+Nós implementamos o programa de forma que ele recebe apenas um campo de agrupamento
+por vez, não conseguimos entender bem como seria se ele recebesse uma lista de campos.
+
+A função "sum" pode ser utilizada apenas nos campos quantitativos como "idade" ou "renda",
+ao passo que a função "count" pode ser utilizada apenas nos campos qualitativos
+como "sexo" ou "regiao".
+
+Usamos o módulo tempfile para criar os arquivos temporários de tamanho menor do que 
+o original.
+
+Programamos o método MergeSort para ordenar uma lista, o método two-way-merge para
+receber dois arquivos ordenados e juntá-los em um arquivo ordenado da mesma forma
+que o algoritmo Merge Sort funciona.
+
+O método "merge_chk" junta os arquivos menores ordenados de dois em dois utilizando
+o método "two_way_merge".
+
+O método "group_by" serve apenas para utilizar o arquivo já ordenado e retornar
+aquilo que desejamos. O campo de agrupamento utilizando a função de agregação.
+
+O método "dividir_arquivo" recebe o arquivo original e cria subarquivos menores
+já ordenados.
+
+Nossa função não possui uma "main()" que possibilite a interação com o usuário,
+porém basta alterar os parâmetros construtores da classe e rodar o programa para
+realizar outros testes.
+
+No nosso programa, utilizamos 10 chunks menores para dividir o arquivo, ou seja,
+como o nosso arquivo possui 1000000 de registros, cada chunk possui 100000 registros.

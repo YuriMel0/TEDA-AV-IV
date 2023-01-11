@@ -1,0 +1,33 @@
+UFRJ - Universidade Federal do Rio de Janeiro
+MAE015 - Tóp. Especiais em Engenharia de dados A: Estrutura de dados
+Autores:
+Nome: Rhuan Justo
+DRE: 118043398
+
+Nome: Davi Richards
+DRE: 119022078
+
+Nome: Sebastião Rodrigo
+DRE: 117099621
+
+Nome: Yuri Ferreira Melo
+DRE: 120081378
+
+Ao utilizarmos o nosso programa "AVIVEstDados.py" com a nossa base de dados,
+obtivemos um tempo de 9.76 segundos para dividir o arquivo em 10 arquivos menores.
+
+Esse tempo foi para cerca de 2 segundos se usássemos o TimSort (Algoritmo de sorting)
+do python, porém optamos por usar o merge-sort devido à natureza do trabalho.
+
+Depois, gastamos 10.52 segundos para reagrupar esses 10 arquivos menores no arquivo
+original, porém ordenado.
+
+Ao passo que, utilizando um dicionário (tabela hash), obtivemos um tempo bem melhor
+de 0.9 segundo.
+
+Não entendemos muito bem porque o nosso código foi tão mais demorado, porém, fizemos
+exatamente aquilo que foi pedido no projeto com o Merge-Sort Externo.
+
+Para alcançar resultados, agrupamos nossa base de dados pelo campo "sexo", utilizando
+a função de agrupação 'count', ou seja, contamos quantos homens e mulheres haviam
+em nosso dataset.

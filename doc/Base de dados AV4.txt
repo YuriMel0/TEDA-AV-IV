@@ -1,0 +1,41 @@
+UFRJ - Universidade Federal do Rio de Janeiro
+MAE015 - Tóp. Especiais em Engenharia de dados A: Estrutura de dados
+Autores:
+Nome: Rhuan Justo
+DRE: 118043398
+
+Nome: Davi Richards
+DRE: 119022078
+
+Nome: Sebastião Rodrigo
+DRE: 117099621
+
+Nome: Yuri Ferreira Melo
+DRE: 120081378
+
+A base de dados utilizada na avaliação 4 foi criada da seguinte maneira:
+
+Tomamos 5 campos principais: identidade, idade, sexo, região e renda.
+
+A identidade é um número inteiro de 11 dígitos que serve apenas para identificar
+unicamente cada registro do data-set (cada registro é para ser como se fossem os dados
+de uma pessoa).
+
+Esse número é criado inicialmente por 123456789 e faz uma progressão aritmética de
+passo 69
+
+A idade é um número inteiro criado aleatoriamente de 18 a 60.
+
+O sexo é uma string criada aleatoriamente, pode ser "M" ou "F".
+
+A região é uma string criada aleatoriamente, pode ser "Capital", "Baixada Fluminense"
+ou "Regiao Serrana".
+
+A renda é um inteiro criado aleatoriamente entre 0 e 5000.
+
+Criamos 1000000 (um milhão) de registros para fazer os testes. É uma base de dados
+de 34 Kb, pequena o suficiente para rodar em tempo hábil e perceber
+a diferença entre os métodos testados.
+
+
+
